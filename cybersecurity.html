@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Services | CyberOrange Academy</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316',
+                        secondary: '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .process-step:hover .process-icon {
+            transform: scale(1.1);
+            background-color: #f97316;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="shield" class="text-primary h-8 w-8"></i>
+                        <span class="ml-2 text-xl font-bold text-secondary">CyberOrange</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="text-secondary hover:text-primary px-3 py-2 font-medium">Home</a>
+                    <a href="training.html" class="text-secondary hover:text-primary px-3 py-2 font-medium">Training</a>
+                    <a href="#" class="text-primary px-3 py-2 font-medium border-b-2 border-primary">Cyber Services</a>
+                    <a href="#" class="text-secondary hover:text-primary px-3 py-2 font-medium">About Us</a>
+                    <a href="#" class="text-secondary hover:text-primary px-3 py-2 font-medium">Contact</a>
+                    <button class="ml-8 bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-orange-600 transition">Get a Quote</button>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-secondary">
+                        <i data-feather="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="relative bg-secondary pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                    <span class="block">Cybersecurity</span>
+                    <span class="block text-primary">Solutions</span>
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Comprehensive protection for your digital assets from certified cybersecurity experts.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Our Services</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-secondary sm:text-4xl">
+                    Protect Your Business
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    We offer end-to-end cybersecurity solutions tailored to your organization's needs.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-primary rounded-md p-3">
+                                <i data-feather="target" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-lg leading-6 font-medium text-secondary">Penetration Testing</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Simulate real-world attacks to identify vulnerabilities before criminals exploit them.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-primary rounded-md p-3">
+                                <i data-feather="search" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-lg leading-6 font-medium text-secondary">Vulnerability Assessment</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Comprehensive scanning and analysis of your systems for security weaknesses.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-primary rounded-md p-3">
+                                <i data-feather="users" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-lg leading-6 font-medium text-secondary">Security Awareness Training</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Educate your employees to recognize and prevent security threats targeting your organization.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-primary rounded-md p-3">
+                                <i data-feather="shield" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-lg leading-6 font-medium text-secondary">Managed Security Services</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                24/7 monitoring, threat detection, and response for your critical systems.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-primary rounded-md p-3">
+                                <i data-feather="alert-octagon" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-lg leading-6 font-medium text-secondary">Incident Response</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Rapid response and remediation when security incidents occur.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden service-card transition duration-300">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-primary rounded-md p-3">
+                                <i data-feather="file-text" class="h-6 w-6 text-white"></i>
+                            </div>
+                            <div class="ml-5">
+                                <h3 class="text-lg leading-6 font-medium text-secondary">Compliance Consulting</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Achieve and maintain compliance with industry regulations and standards.
+                            </p>
+                        </div>
+                        <div class="mt-6">
+                            <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process -->
+    <div class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Our Process</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-secondary sm:text-4xl">
+                    How We Secure Your Business
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+                    <!-- Step 1 -->
+                    <div class="process-step text-center">
+                        <div class="process-icon mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-secondary text-white transition duration-300">
+                            <i data-feather="search" class="h-8 w-8"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-lg font-medium text-secondary">1. Assess</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                We conduct thorough assessments to understand your security posture and identify risks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step text-center">
+                        <div class="process-icon mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-secondary text-white transition duration-300">
+                            <i data-feather="shield" class="h-8 w-8"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-lg font-medium text-secondary">2. Protect</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                We implement customized security measures to fortify your digital assets.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step text-center">
+                        <div class="process-icon mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-secondary text-white transition duration-300">
+                            <i data-feather="eye" class="h-8 w-8"></i>
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-lg font-medium text-secondary">3. Monitor</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Continuous monitoring and proactive threat hunting to keep you protected.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Case Studies -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Success Stories</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-secondary sm:text-4xl">
+                    Client Case Studies
+                </p>
+            </div>
+
+            <div class="mt-12">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                    <!-- Case Study 1 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative pb-48 overflow-hidden">
+                            <img class="absolute inset-0 h-full w-full object-cover" src="http://static.photos/technology/640x360/4" alt="Case Study">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-10 w-10 rounded-full" src="http://static.photos/logos/200x200/9" alt="Client">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-secondary">TechForward Inc.</p>
+                                    <p class="text-sm text-gray-500">Financial Services</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-xl font-bold text-secondary">Preventing Data Breaches</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Implemented advanced threat detection systems that reduced security incidents by 92%.
+                                </p>
+                            </div>
+                            <div class="mt-6">
+                                <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                    Read full case study
+                                    <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative pb-48 overflow-hidden">
+                            <img class="absolute inset-0 h-full w-full object-cover" src="http://static.photos/technology/640x360/5" alt="Case Study">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0">
+                                    <img class="h-10 w-10 rounded-full" src="http://static.photos/logos/200x200/10" alt="Client">
+                                </div>
+                                <div class="ml-3">
+                                    <p class="text-sm font-medium text-secondary">MediCare Solutions</p>
+                                    <p class="text-sm text-gray-500">Healthcare</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h3 class="text-xl font-bold text-secondary">HIPAA Compliance</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Achieved full HIPAA compliance and improved patient data protection measures.
+                                </p>
+                            </div>
+                            <div class="mt-6">
+                                <a href="#" class="inline-flex items-center text-primary text-sm font-medium">
+                                    Read full case study
+                                    <i data-feather="arrow-right" class="ml-1 h-4 w-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Client Feedback</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-secondary sm:text-4xl">
+                    What Our Clients Say
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="http://static.photos/people/200x200/9" alt="Testimonial">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-secondary">David Thompson</h4>
+                                <p class="text-gray-500">CIO, RetailCorp</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-600">
+                                "Their penetration testing was the most thorough we've experienced. They found vulnerabilities that others had missed."
+                            </p>
+                        </div>
+                        <div class="mt-4 flex">
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="http://static.photos/people/200x200/10" alt="Testimonial">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-secondary">Lisa Park</h4>
+                                <p class="text-gray-500">Security Director, FinTech Global</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-600">
+                                "The security awareness training transformed our employees from our weakest link to our first line of defense."
+                            </p>
+                        </div>
+                        <div class="mt-4 flex">
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="http://static.photos/people/200x200/11" alt="Testimonial">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-lg font-medium text-secondary">Robert Chen</h4>
+                                <p class="text-gray-500">CEO, StartupX</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-gray-600">
+                                "Their managed security services give us enterprise-grade protection at a fraction of the cost of building our own SOC."
+                            </p>
+                        </div>
+                        <div class="mt-4 flex">
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                            <i data-feather="star" class="text-yellow-400 h-4 w-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="bg-primary">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                <span class="block">Ready to secure your business?</span>
+                <span class="block">Get a free security assessment.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-gray-50">
+                        Request Assessment
+                    </a>
+                </div>
+                <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <h3 class="text-white text-lg font-semibold">CyberOrange Academy</h3>
+                    <p class="mt-4 text-gray-300">
+                        Empowering individuals and businesses with technology education and cybersecurity solutions since 2015.
+                    </p>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="twitter" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="linkedin" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="youtube" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white text-sm font-semibold uppercase tracking-wider">Cyber Services</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Penetration Testing</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Vulnerability Assessment</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Security Training</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Managed Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-sm font-semibold uppercase tracking-wider">Company</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-8 flex justify-between">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2023 CyberOrange Academy. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
